@@ -9,7 +9,7 @@ const NavBar = () => {
                 <div>
                     <h1>
                         <a href="index.html">
-                        GEMINI'S DUDE
+                        GEMINI's DUDE
                         </a>
                     </h1>
                 </div>

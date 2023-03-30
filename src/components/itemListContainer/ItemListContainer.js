@@ -1,12 +1,15 @@
 import React from 'react'
+import "./ItemListContainer.css"
 
-const HomeView = () => {
+const ItemListContainer = (props) => {
+  
+
+
+
   return (
     <div>
-      <aside>
-        <h2>Publicidad</h2>
-      </aside>
+        <h2>{props.greeting}</h2>
     </div>
   )
 }
-export default HomeView;
+export default ItemListContainer;

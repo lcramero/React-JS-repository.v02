@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <ItemListContainer />
+      <ItemListContainer greeting ="Bienvenido a GEMINI's DUDE" />
     </div>
   );
 }
