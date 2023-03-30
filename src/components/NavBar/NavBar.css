@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+/* arreglar esto despues */
+nav div div h1 a{
+    text-decoration: none;
+}
+.navbar-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.navbar-ul ul{
+    display: flex;
+    flex-direction: row;
+}
+.navbar-ul ul li{
+    list-style: none;
+    margin: 0 1.5rem 0 1.5rem;
+}
+nav > .navbar-ul > ul > .li-dropdown > .ul-dropdown{
+    display: flex;
+    flex-direction: column;
+}

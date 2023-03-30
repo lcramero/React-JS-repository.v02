@@ -3,7 +3,9 @@ import React from 'react'
 const HomeView = () => {
   return (
     <div>
-      <h1>HomeView</h1>
+      <aside>
+        <h2>Publicidad</h2>
+      </aside>
     </div>
   )
 }
