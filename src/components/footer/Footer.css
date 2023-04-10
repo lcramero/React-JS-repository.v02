@@ -1,0 +1,80 @@
+footer{
+    background:  #EAEBF2;
+    display: flex;
+    flex-direction: column;
+}
+footer .div-footer{
+    display: flex;
+    flex-direction: row;
+}
+footer > .div-footer > .footer-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+footer .div-footer .footer-text h3{
+    opacity: 0.7;
+    margin-bottom: 1rem;
+}
+footer .div-footer .footer-text .div-footer-img{
+    padding: 0 0 0 5%;
+    width: 70%;
+}
+footer .div-footer .footer-text p{
+    margin: 1%;
+    margin-bottom: 2%;
+    opacity: 0.7;
+    letter-spacing: 0.07rem;
+    text-align: start;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+footer .div-footer .footer-text .div-footer-aboutus{
+    padding: 1rem 1rem 0 3rem;
+}
+footer .div-footer .footer-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3% 0 1%;
+}
+footer .div-footer .footer-icons h3{
+    opacity: 0.7;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+footer .div-footer .footer-icons .footer-icons-self{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+footer .div-footer .footer-icons .footer-icons-self p{
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+}
+footer .footer-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3% 1.5% 1% 1.5%;
+}
+footer .footer-links div p{
+    color:black;
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+footer .footer-links .footer-links-self{
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.7;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+footer .footer-links .footer-links-self div a{
+    text-decoration: none;
+    margin-left: 1rem;
+    color: black;
+}

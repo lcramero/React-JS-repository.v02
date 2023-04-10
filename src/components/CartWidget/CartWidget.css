@@ -1,4 +1,10 @@
+.div-cart{
+    display: flex;
+}
 .div-cart > .div-cart-icon > svg{
     width: 2rem;
     height: 100%;
+    margin: 0 8rem 0 1rem;
 }
+.div-cantidad{}
+    

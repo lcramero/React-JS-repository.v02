@@ -1,7 +1,9 @@
 //Componentes
 import ItemListContainer from "./components/itemListContainer/ItemListContainer";
-import NavBar from "./components/NavBar/NavBar"
-
+import NavBar from "./components/navBar/NavBar";
+import ItemCount from "./components/itemCount/ItemCount";
+import ComponenteRandom from "./components/componenteRandom/ComponenteRandom"
+import Footer from "./components/footer/Footer";
 
 //Estilos
 import './App.css';
@@ -13,6 +15,9 @@ function App() {
     <div className="App">
       <NavBar />
       <ItemListContainer greeting ="Bienvenido a GEMINI's DUDE" />
+      <ItemCount />
+      <ComponenteRandom />
+      <Footer />
     </div>
   );
 }

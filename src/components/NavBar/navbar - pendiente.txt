@@ -1,0 +1,28 @@
+<nav>
+            
+            <div className="navbar-ul">
+                <ul>
+                    
+                    <li>
+                        <a href="a definir">Home</a>
+                    </li>
+                    <li className="li-dropdown">
+                        <ul className="ul-dropdown">
+                            <li>
+                                <a href="a definir">elemento 1</a>
+                            </li>
+                            <li>
+                                <a href="a definir">elemento 2</a>
+                            </li>
+                            <li>
+                                <a href="a definir">elemento 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="a definir">Support</a>
+                    </li>
+                </ul>
+                <CartWidget cantidad="7" />
+            </div>            
+        </nav>
