@@ -1,9 +1,16 @@
 //Componentes
 import ItemListContainer from "./components/itemListContainer/ItemListContainer";
 import NavBar from "./components/navBar/NavBar";
-import ItemCount from "./components/itemCount/ItemCount";
-import ComponenteRandom from "./components/componenteRandom/ComponenteRandom"
+import Home from "./components/home/Home"
+import ItemDetailContainer from "./components/itemDetailContainer/ItemDetailContainer"
 import Footer from "./components/footer/Footer";
+
+//Modulos
+import{
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom"
 
 //Estilos
 import './App.css';
@@ -12,13 +19,21 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <ItemListContainer greeting ="Bienvenido a GEMINI's DUDE" />
-      <ItemCount />
-      <ComponenteRandom />
-      <Footer />
+    <>
+    <div>
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="/home" element={<Home/>}/>
+          <Route path ="/products" element={<ItemListContainer/>}/>
+          <Route path="/products/:categoryId" element={<ItemListContainer/>}/>
+          <Route path="/detail/:itemId" element={<ItemDetailContainer/>}/>
+          <Route path="/about-us"/>
+        </Routes>
+        <Footer/>
+      </Router>
     </div>
+    </>
   );
 }
 

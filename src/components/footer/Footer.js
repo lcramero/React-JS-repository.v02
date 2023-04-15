@@ -39,7 +39,7 @@ import "./Footer.css"
                                 <polyline points="3 7 12 13 21 7" />
                             </svg>
                         </a>
-                        <p>support@seasonal.com</p>
+                        <p>support@geminisdude.com</p>
                     </div>
                     <div className="footer-icons-self">
                         <a class="footer__link--decoration" href="https://wa.me/+5942658963552">
@@ -65,7 +65,7 @@ import "./Footer.css"
                                 <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
                             </svg>
                         </a>
-                        <p>/seasonal</p>
+                        <p>/GeminisDUDE</p>
                     </div>
                 </div>
             </div>

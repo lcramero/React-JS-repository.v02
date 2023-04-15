@@ -6,7 +6,7 @@ import Stock from "../data/Stock"
             setTimeout(() =>{
             resolve (Stock)
             reject ("rechazado")
-            }, 2000)
+            }, 0)
     })
 }
 export default PullProducts
