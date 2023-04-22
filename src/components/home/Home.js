@@ -1,9 +1,9 @@
 import React from 'react'
-
+import CarouselFadeExample from "../carousel/Carousel"
 const Home = () => {
   return (
     <div>
-      que onda
+      <CarouselFadeExample/>
     </div>
   )
 }

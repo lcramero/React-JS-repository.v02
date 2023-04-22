@@ -17,36 +17,38 @@ const NavBar = () => {
     return (
         <Navbar bg="light" expand="lg">
             <Container fluid>
-                <Navbar.Brand><Link className="links" to="/products"><Logo /></Link></Navbar.Brand>
+                <Navbar.Brand>
+                    <Link className="links" to="/products"><Logo /></Link>
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: "100px" }} navbarScroll>
-                        <Nav.Link></Nav.Link>
                         <Nav.Link><Link className="links" to="/home">Home</Link></Nav.Link>
+                        <Nav.Link><Link className="links" to="/products">Products</Link></Nav.Link>
                         <NavDropdown title="Category" id="navbarScrollingDropdown">
                             <NavDropdown title="Clothes" id="navbarScrollingDropdown">
                                 <NavDropdown.Item>
-                                    <Link className="links" to="/products/dresses">
+                                    <Link className="links" to="/products/clothes/dresses">
                                         Dresses
                                     </Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link className="links" to="/products/shirts">
+                                    <Link className="links" to="/products/clothes/shirts">
                                         Shirts
                                     </Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link className="links" to="/products/coats">
+                                    <Link className="links" to="/products/clothes/coats">
                                         Coats
                                     </Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link className="links" to="/products/pants">
+                                    <Link className="links" to="/products/clothes/pants">
                                         Pants
                                     </Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link className="links" to="/products/sets">
+                                    <Link className="links" to="/products/clothes/sets">
                                         Sets
                                     </Link>
                                 </NavDropdown.Item>
@@ -54,22 +56,22 @@ const NavBar = () => {
                             <NavDropdown.Divider />
                             <NavDropdown title="Shoes" id="navbarScrollingDropdown">
                                 <NavDropdown.Item>
-                                    <Link className="links" to="/products/boots">
+                                    <Link className="links" to="/products/shoes/boots">
                                         Boots
                                     </Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link className="links" to="/products/sandals">
+                                    <Link className="links" to="/products/shoes/sandals">
                                         Sandals
                                     </Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link className="links" to="/products/sneakers">
+                                    <Link className="links" to="/products/shoes/sneakers">
                                         Sneakers
                                     </Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link className="links" to="/products/heels">
+                                    <Link className="links" to="/products/shoes/heels">
                                         Hells
                                     </Link>
                                 </NavDropdown.Item>
@@ -77,17 +79,17 @@ const NavBar = () => {
                             <NavDropdown.Divider />
                             <NavDropdown title="Bags" id="navbarScrollingDropdown">
                                 <NavDropdown.Item>
-                                    <Link className="links" to="/products/clutches">
+                                    <Link className="links" to="/products/bags/clutches">
                                         Clutches
                                     </Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link className="links" to="/products/belt-bags">
+                                    <Link className="links" to="/products/bags/belt-bags">
                                         Belt bags
                                     </Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
-                                    <Link className="links" to="/products/briefcase">
+                                    <Link className="links" to="/products/bags/briefcase">
                                         Briefcase
                                     </Link>
                                 </NavDropdown.Item>

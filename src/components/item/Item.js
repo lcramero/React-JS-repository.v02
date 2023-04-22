@@ -19,7 +19,7 @@ import { Link } from 'react-router-dom'
                         {description}
                     </Card.Text>
                     <Card.Title className="text-muted">U$D {price}</Card.Title>
-                    <Link className='item-card-link' to ={`/detail/${id}`}>
+                    <Link className='item-card-link' to ={`/item/${id}`}>
                         <Button variant="primary">See more details</Button>
                     </Link>
                 </Card.Body>
