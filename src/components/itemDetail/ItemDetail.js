@@ -12,7 +12,7 @@ import Card from 'react-bootstrap/Card';
 const ItemDetail = ({title, image, description, price}) => {
   return (
     <>
-    <Card className='itemDetail-card' style={{ width: '18rem' }}>
+    <Card id='item-detail-card' style={{ width: '18rem' }}>
       <Card.Img variant="top" src={image} />
       <Card.Body className='item-card'>
           <Card.Title>{title}</Card.Title>

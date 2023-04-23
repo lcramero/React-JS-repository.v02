@@ -12,14 +12,14 @@ import { Link } from 'react-router-dom'
         return (
             <>
             <Card style={{ width: '15rem' }}>
-                <Card.Img variant="top" src={image} />
-                <Card.Body className='item-card'>
+                <Card.Img variant="top" className='item-card-img' src={image} />
+                <Card.Body>
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>
                         {description}
                     </Card.Text>
                     <Card.Title className="text-muted">U$D {price}</Card.Title>
-                    <Link className='item-card-link' to ={`/item/${id}`}>
+                    <Link className='item-card-link' to ={`/detail/${id}`}>
                         <Button variant="primary">See more details</Button>
                     </Link>
                 </Card.Body>
