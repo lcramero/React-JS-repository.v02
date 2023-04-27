@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 //Estilos
 import "./ItemCount.css"
@@ -9,31 +9,30 @@ import {RiSubtractFill} from "react-icons/ri";
 
 
 
-export const ItemCount = () => {
+export const ItemCount = ({max, amount, modify}) => {
 
-    const [counter, setCounter] = useState(1);
-
+    /* const [counter, setCounter] = useState(1); */
+    //El trabajo del hook UseState lo hemos reemplazado con las props max, amount y modify
+    //max hace referencia al stock, amount reemplaza a counter y modify a setCounter
+    //estas props son las que usamos en itemDetail
     const sumar = () =>{
-        setCounter( counter +1)
+        if (amount < max){
+            modify( amount +1)
+        }
     }
     const restar = () =>{
-        if (counter>0) {
-            setCounter( counter -1)
+        if (amount>0) {
+            modify( amount -1)
         }
         else{alert("la cantidad no puede ser menor a cero")}
     }
-    /* const addOn = () =>{
-        if (stock > 0) {
-            //devolver la adicion al carrito
-        }
-    } */
-
+    
     return (
         <>        
         <div className='itemcount-btn'>
             <div className='itemcount-btn-left'>
                 <button onClick = {restar}><h3><RiSubtractFill/></h3></button>
-                <h4>{counter}</h4>
+                <h4>{amount}</h4>
                 <button onClick = {sumar}><h3><RxPlus /></h3></button>
             </div>
            {/*  <div className='itemcount-btn-right'>

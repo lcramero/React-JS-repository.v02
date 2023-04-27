@@ -1,0 +1,14 @@
+.cartscreen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cartscreen-window {
+    margin: 2rem 0 2rem 0;
+}
+#button{
+    color: black;
+}
+
+
+

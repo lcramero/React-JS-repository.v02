@@ -102,7 +102,9 @@ const NavBar = () => {
                         </Nav.Link>
                     </Nav>
                     <Nav.Link>
-                        <CartWidget cantidad= "7"></CartWidget>
+                        <Link className="links" to="/cart">
+                            <CartWidget />
+                        </Link>
                     </Nav.Link>
                 </Navbar.Collapse>
             </Container>
