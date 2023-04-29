@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import PullProducts from "../../helpers/PullProducts"
 import ItemDetail from "../itemDetail/ItemDetail"
 import {ImSpinner6} from "react-icons/im"
+import { getFirestore } from '../../firebase/config';
 
 //Estilos
 import "./ItemDetailContainer.css"
@@ -17,6 +18,23 @@ const ItemDetailContainer = () => {
     const [loading, setLoading] = useState(false)
 
     const {itemId} = useParams ()
+
+    const db = getFirestore()
+
+    const products = db.collection("productos")
+
+    const item = products.doc(itemId)
+
+    item.get()
+        .then((doc) => {
+            setItems({
+                id: doc.id, ...doc.data()
+            })
+        })
+        .catch ((error) => console.log((error)))
+        .finally(() => {
+            setLoading(false)
+        })
 
     useEffect(() => {
         //Al darle true al loading estamos inicializando el montaje

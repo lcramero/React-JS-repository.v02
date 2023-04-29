@@ -31,6 +31,9 @@ export const CartProvider = ({children}) => {
         setCart(newCart)
     }
 
+    const clearCart = () => {
+        setCart([])
+    }
 
     return (
         <CartContext.Provider value={{
@@ -38,6 +41,7 @@ export const CartProvider = ({children}) => {
             calcQuantity,
             calcTotal,
             removeItem,
+            clearCart,
             cart}}>
             {children}
         </CartContext.Provider>

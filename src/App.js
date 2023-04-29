@@ -4,7 +4,8 @@ import NavBar from "./components/navBar/NavBar";
 import Home from "./components/home/Home"
 import ItemDetailContainer from "./components/itemDetailContainer/ItemDetailContainer"
 import Footer from "./components/footer/Footer";
-
+import { CheckOut } from "./components/checkout/CheckOut";
+import CartScreen from "./components/cartScreen/CartScreen";
 //Modulos
 import{
   BrowserRouter as Router,
@@ -12,12 +13,13 @@ import{
   Route
 } from "react-router-dom";
 import {CartProvider} from "./components/context/CartContext"
-import CartScreen from "./components/cartScreen/CartScreen";
+
 
 //Estilos
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 
 
 
@@ -37,6 +39,7 @@ function App() {
               <Route path="/detail/:itemId" element={<ItemDetailContainer/>}/>
               <Route path="/about-us"/>
               <Route path="/cart" element={<CartScreen/>}/>
+              <Route path="/checkout" element={<CheckOut/>}/>
             </Routes>
             <Footer/>
           </Router>

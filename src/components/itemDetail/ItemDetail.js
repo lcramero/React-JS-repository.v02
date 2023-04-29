@@ -11,7 +11,7 @@ import Card from 'react-bootstrap/Card';
 
 
 
-const ItemDetail = ({id, title, image, category, description, stock, price}) => {
+const ItemDetail = ({id, name, image, category, description, stock, price}) => {
 
   const navigate = useNavigate()
   const comeBack = () => {
@@ -32,6 +32,7 @@ const ItemDetail = ({id, title, image, category, description, stock, price}) => 
       image, 
       counter,
       id,
+      name,
     }
     addToCart(newItem)
   }
@@ -41,7 +42,7 @@ const ItemDetail = ({id, title, image, category, description, stock, price}) => 
     <Card id='item-detail-card' style={{ width: '18rem' }}>
       <Card.Img variant="top" src={image} />
       <Card.Body className='item-card'>
-          <Card.Title>{title}</Card.Title>
+          <Card.Title>{name}</Card.Title>
           <Card.Text>{description}</Card.Text>
           <Card.Title className="text-muted">U$D {price}</Card.Title>
           <ItemCount max={stock} modify={setCounter} amount={counter} />
