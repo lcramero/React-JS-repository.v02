@@ -1,0 +1,11 @@
+img{
+    width: 10rem;
+    height: 75%;
+}
+#row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 15rem 0 15rem;
+}

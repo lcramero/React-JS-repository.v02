@@ -8,8 +8,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 //Componentes
-import CartWidget from "../cartWidget/CartWidget";
-import Logo from "../logo/Logo";
+import CartWidget from "../CartWidget/CartWidget";
+import Logo from "../Logo/Logo";
 
 //Estilos
 import "./NavBar.css";

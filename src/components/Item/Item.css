@@ -1,0 +1,14 @@
+.item-card-link{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    margin-bottom: 5rem;
+}
+.card .card-img-top{
+    object-fit:cover;
+
+}
+.card .card-body{
+    text-align: center;
+}

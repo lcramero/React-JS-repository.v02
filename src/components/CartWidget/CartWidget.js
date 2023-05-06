@@ -1,6 +1,6 @@
 //Modulos
 import React, { useContext } from 'react'
-import { CartContext } from '../context/CartContext';
+import { CartContext } from '../Context/CartContext';
 
 //Estilos
 import "./CartWidget.css"

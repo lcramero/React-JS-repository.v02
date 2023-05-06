@@ -1,0 +1,19 @@
+.checkout-content{
+    margin: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.space{
+    margin: 0 3rem  0 3rem;
+}
+.checkout-content img{
+    width: 25rem;
+}
+.checkout-form{
+    width: 23rem;
+}
+.checkout-form input{
+    margin: 1rem;
+    
+}

@@ -1,0 +1,8 @@
+.card{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#item-detail-card .card-img-top{
+    height: 25rem;
+}
