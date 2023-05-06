@@ -17,3 +17,10 @@
     margin: 1rem;
     
 }
+.checkout-form-buttons{
+    display: flex;
+    justify-content: center;
+}
+#btn{
+    margin-left: 2.3rem;
+}

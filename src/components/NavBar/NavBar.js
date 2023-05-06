@@ -21,7 +21,7 @@ const NavBar = () => {
         <Navbar bg="light" expand="lg">
             <Container fluid>
                 <Navbar.Brand>
-                    <Link className="links" to="/products"><Logo /></Link>
+                    <Link className="links" to="/"><Logo /></Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
@@ -74,7 +74,7 @@ const NavBar = () => {
                                 </NavDropdown.Item>
                                 <NavDropdown.Item>
                                     <Link className="links" to="/products/shoes/heels">
-                                        Hells
+                                        Heels
                                     </Link>
                                 </NavDropdown.Item>
                             </NavDropdown>
@@ -96,12 +96,6 @@ const NavBar = () => {
                                     </Link>
                                 </NavDropdown.Item>
                             </NavDropdown>
-                        
-                        <Nav.Link>
-                            <Link className="links" to="/about-us">
-                                Abouts us
-                            </Link>
-                        </Nav.Link>
                     </Nav>
                     <Nav.Link>
                         <Link className="links" to="/cart">

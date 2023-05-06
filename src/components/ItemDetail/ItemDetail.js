@@ -50,7 +50,7 @@ const ItemDetail = ({id, name, image, category, description, stock, price}) => {
               <Button variant="primary" onClick={addOn}>Add to cart</Button>
           </Link>
           <hr/>
-          <Button onClick={comeBack}>volver a productos</Button>
+          <Button onClick={comeBack}>Back to products</Button>
       </Card.Body>
     </Card>
 </>

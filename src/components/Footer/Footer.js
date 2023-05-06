@@ -13,21 +13,23 @@ import "./Footer.css"
                     </div>
                     <div className="div-footer-aboutus">
                         <h3>
-                            Sobre nosotros
+                            About us
                         </h3>
                         <div>
                             <p>
-                            En nuestra tienda online encontraras los mejores productos para actividades exteriores. Esta selección es realizada por nuestro Departamento de Innovación y Desarrollo seleccionando los mejores artículos del mercado que mejor se adapten a tus necesidades.
+                                We make sure to select the latest trends and styles for you. 
+                                Helping you find the perfect clothes that fit your personal style and enhance your image is our goal.
                             </p>
                             <p>
-                            Nos encanta asesorarte en la selección de productos que mejor se adapten a tu afición, este asesoramiento te lo ofrecen nuestros expertos en cada una de las actividades que encontrarás, estando muy próximos a nuestros clientes ya que orientamos todos nuestros esfuerzos para conseguir la máxima satisfacción y la relación más duradera posible.
+                                You will enjoy a unique experience at Gemini'sDUDE.
+                                We focus on achieving maximum satisfaction and a long-lasting relationship with our customers.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div className='footer-icons'>
                     <div>
-                        <h3>Seguinos</h3>
+                        <h3>Follow us</h3>
                     </div>
                     <div className="footer-icons-self">
                         <a class="footer__link--decoration" href="mailto:cvdiv@gmail.com">

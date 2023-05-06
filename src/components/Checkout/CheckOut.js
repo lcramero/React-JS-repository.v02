@@ -55,7 +55,7 @@ export const CheckOut = () => {
                 })
             })
             .finally(() => {
-                console.log("operación realizada con éxito");
+                console.log(order);
             })
 
             cart.forEach((item) => {
@@ -77,8 +77,12 @@ export const CheckOut = () => {
             <div className='checkout-form space'>
                 <form onSubmit ={handleSubmit} className='container mt-3'>
                     <div className='form-group'>
-                        <label htmlFor='email'>Email</label>
+                        <label htmlFor='email'>E-mail</label>
                         <input type='text' className='form-control' onChange={(e)=>setEmail(e.target.value)} value={email}/>
+                    </div>
+                    <div className='form-group'>
+                        <label >Confirme E-mail</label>
+                        <input autoComplete='off' type='text' className='form-control'/>
                     </div>
                     <div className='form-group'>
                         <label htmlFor='nombre'>Nombre</label>
@@ -92,8 +96,12 @@ export const CheckOut = () => {
                         <label htmlFor='telefono'>Teléfono</label>
                         <input type='number' className='form-control'onChange={(e)=>setPhone(e.target.value)} value={phone}/>
                     </div>
-                    <Button type="submit" className='btn btn-success'>Finalizar</Button>
-                    <Link to="/cart" className="btn btn-info">Volver al carrito</Link>
+                    <div className='checkout-form-buttons'>
+                        <Button type="submit" id="btn" className='btn'>Buy</Button>
+                        <Link to="/cart" >
+                        <Button type="submit" id="btn"  className='btn'>Back to cart</Button>
+                        </Link>
+                    </div>
                 </form>
             </div>
         </div>

@@ -191,5 +191,13 @@
         price: 75,
         image: "https://images.unsplash.com/photo-1524498250077-390f9e378fc0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"
     },
+    {
+        id: 131,
+        description: "Natural handler briefcase",
+        category: "briefcase",
+        stock: 12,
+        price: 65,
+        image: "https://images.unsplash.com/photo-1521316839910-80fb08ee95d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+    },
 ]
 export default Stock

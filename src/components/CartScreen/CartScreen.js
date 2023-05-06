@@ -20,11 +20,11 @@ import "./CartScreen.css"
                 {
                     cart.length === 0
                     ? <>
-                        <h3>Carrito vacío</h3>
-                        <Link to="/products" className="btn btn-primary"> Volver a comprar</Link>
+                        <h3>Cart empty</h3>
+                        <Link to="/products" className="btn btn-primary">Back to shopping</Link>
                     </>
                     :<>
-                        <h3>Resumen de compra</h3>
+                        <h3>Purchasing summary report</h3>
                         <hr/>
                         <div className='cartscreen-global'>
                             <div className='cartscreen-content'>
@@ -45,11 +45,11 @@ import "./CartScreen.css"
                             }
                             </div>
                             <div className='cartscreen-buys'>
-                            <stronge>Precio total U$D{calcTotal()}</stronge>
+                            <stronge>total U$S {calcTotal()}</stronge>
                             <hr/>
-                            <Button onClick={clearCart} className='cartscreen-buys-items'>Vaciar carrito</Button>
+                            <Button onClick={clearCart} className='cartscreen-buys-items'>Clear cart</Button>
                             <Link to="/checkout">
-                                <Button>Terminar compra</Button>
+                                <Button>Finish shopping</Button>
                             </Link>
                             </div>
                         </div>
