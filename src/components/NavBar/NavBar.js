@@ -1,17 +1,20 @@
 //Modulos
 import React from "react";
-import CartWidget from "../cartWidget/CartWidget";
-import Logo from "../logo/Logo";
-import { Link } from "react-router-dom";
 
-//Estilos
-import "./NavBar.css";
-
-//Módulos de react
+//Módulos de react-bootstrap
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+
+//Componentes
+import CartWidget from "../cartWidget/CartWidget";
+import Logo from "../logo/Logo";
+
+//Estilos
+import "./NavBar.css";
+import { Link } from "react-router-dom";
+
 
 const NavBar = () => {
     return (
@@ -25,14 +28,13 @@ const NavBar = () => {
                     <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: "100px" }} navbarScroll>
                         <Nav.Link><Link className="links" to="/home">Home</Link></Nav.Link>
                         <Nav.Link><Link className="links" to="/products">Products</Link></Nav.Link>
-                        <NavDropdown title="Category" id="navbarScrollingDropdown">
-                            <NavDropdown title="Clothes" id="navbarScrollingDropdown">
-                                <NavDropdown.Item>
-                                    <Link className="links" to="/products/clothes/dresses">
-                                        Dresses
-                                    </Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
+                        <NavDropdown title="Clothes" id="navbarScrollingDropdown">
+                            <NavDropdown.Item>
+                                <Link className="links" to="/products/clothes/dresses">
+                                    Dresses
+                                </Link>
+                            </NavDropdown.Item>
+                            <NavDropdown.Item>
                                     <Link className="links" to="/products/clothes/shirts">
                                         Shirts
                                     </Link>
@@ -94,7 +96,7 @@ const NavBar = () => {
                                     </Link>
                                 </NavDropdown.Item>
                             </NavDropdown>
-                        </NavDropdown>
+                        
                         <Nav.Link>
                             <Link className="links" to="/about-us">
                                 Abouts us

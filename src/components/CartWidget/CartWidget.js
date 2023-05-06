@@ -1,9 +1,10 @@
 //Modulos
 import React, { useContext } from 'react'
 import { CartContext } from '../context/CartContext';
-//Estilos - Librerias
-import { FaShoppingCart } from "react-icons/fa";
+
+//Estilos
 import "./CartWidget.css"
+import { FaShoppingCart } from "react-icons/fa";
 
 const CartWidget = (props) => {
 

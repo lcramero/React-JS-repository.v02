@@ -1,11 +1,13 @@
 //Modulos
 import React, { useState, useContext } from 'react'
 import {CartContext} from "../context/CartContext"
+
+import firebase from 'firebase';
+import "firebase/firestore";
+import { getFirestore } from '../../firebase/config'
+
 import { Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import firebase from 'firebase';
-import { getFirestore } from '../../firebase/config'
-import "firebase/firestore";
 import Swal from 'sweetalert2';
 
 //Estilos
@@ -13,7 +15,7 @@ import "../checkout/CheckOut.css"
 
 export const CheckOut = () => {
 
-    const [cart, clearCart, calcTotal] = useContext(CartContext);
+    const {cart, clearCart, calcTotal} = useContext(CartContext);
     
     const [email, setEmail] = useState("")
     const [name, setName] = useState("")

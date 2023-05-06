@@ -4,8 +4,8 @@ import React from 'react'
 import "../item/Item.css"
 
 //Modulos
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom'
 
     const Item = ({id, name, description, price, image}) => {
