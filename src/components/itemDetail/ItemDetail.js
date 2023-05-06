@@ -5,7 +5,7 @@ import ItemCount from '../ItemCount/ItemCount'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../Context/CartContext'
 //Estilos
-import "../itemDetail/ItemDetail.css"
+import "../ItemDetail/ItemDetail.css"
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
