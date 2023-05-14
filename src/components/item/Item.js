@@ -1,12 +1,13 @@
+//Modulos
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+//Bootstrap módulos
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 //Estilos
 import "./Item.css"
-
-//Modulos
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
-import { Link } from 'react-router-dom'
 
     const Item = ({id, name, description, price, image}) => {
         return (

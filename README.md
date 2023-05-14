@@ -68,3 +68,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### 'Personal adds'
+
+Bootstrap library added to add styles to the app easier.
+React-Boostrap library added to import modules to the cart section.
+MDBoostrap library added to create a badge with quantity over the cart.
+Sweetalert library added to inform the user about a succeded operation.

@@ -1,10 +1,12 @@
-import React, {useEffect, useState} from 'react'
-import { useParams } from 'react-router-dom';
 //Modulos
-import PullProducts from "../../helpers/PullProducts"
+import {React, useEffect, useState} from 'react'
+import { useParams } from 'react-router-dom';
 import ItemDetail from "../ItemDetail/ItemDetail"
-import {ImSpinner6} from "react-icons/im"
+import PullProducts from "../../helpers/PullProducts"
 import { getFirestore } from '../../firebase/config';
+
+//Boostrap-react módulos
+import {ImSpinner6} from "react-icons/im"
 
 //Estilos
 import "./ItemDetailContainer.css"
@@ -37,7 +39,6 @@ const ItemDetailContainer = () => {
         })
 
     useEffect(() => {
-        //Al darle true al loading estamos inicializando el montaje
             setLoading (true)
             PullProducts()
             .then((response) => {
@@ -53,8 +54,6 @@ const ItemDetailContainer = () => {
             {
             loading
             ?<ImSpinner6 />
-            //lo que esta colocado entre llaves es el operador de spread, este se encarga de recorrer 
-            //todos los items
             :<ItemDetail {...items}/>
             }
         </div>

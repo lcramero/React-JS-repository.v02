@@ -2,10 +2,14 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../Context/CartContext';
 
+//React-bootstrap módulos
+import { FaShoppingCart } from "react-icons/fa";
+
+//MDBootstrap módulos
+import { MDBBadge} from 'mdb-react-ui-kit';
+
 //Estilos
 import "./CartWidget.css"
-import { FaShoppingCart } from "react-icons/fa";
-import { MDBBadge} from 'mdb-react-ui-kit';
 
 const CartWidget = () => {
 
@@ -21,7 +25,6 @@ const CartWidget = () => {
             <div className="div-cart-icon">
                 <FaShoppingCart />
             </div>
-            
         </div>
         </>
     )

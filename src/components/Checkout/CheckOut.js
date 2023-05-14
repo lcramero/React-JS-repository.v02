@@ -5,9 +5,12 @@ import {CartContext} from "../Context/CartContext"
 import firebase from 'firebase';
 import "firebase/firestore";
 import { getFirestore } from '../../firebase/config'
-
-import { Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+
+//Boostrap módulos
+import { Button } from 'react-bootstrap'
+
+//Sweetalert módulos
 import Swal from 'sweetalert2';
 
 //Estilos

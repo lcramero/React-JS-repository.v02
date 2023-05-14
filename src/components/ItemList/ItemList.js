@@ -1,9 +1,9 @@
+//Módulos
 import React from 'react'
 import Item from "../Item/Item"
 
 //Estilos
 import "./ItemList.css"
-
 
     const ItemList = ({products=[]}) => {
         return (

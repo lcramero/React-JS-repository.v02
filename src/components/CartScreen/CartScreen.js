@@ -1,10 +1,11 @@
+//Módulos
 import React, { useContext } from 'react'
-
 import { CartContext } from '../Context/CartContext'
+import { Link } from 'react-router-dom'
 
+//Bootstrap modulos
 import { Card } from 'react-bootstrap'
 import { Button } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
 
 //Estilos
 import "./CartScreen.css"

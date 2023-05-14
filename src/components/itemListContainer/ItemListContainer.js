@@ -1,10 +1,12 @@
-import React, {createFactory, useEffect, useState} from 'react'
-import { useParams } from 'react-router-dom'
 //Modulos
-/* import PullProducts from "../../helpers/PullProducts" */
+import {React, useEffect, useState} from 'react'
+import { useParams } from 'react-router-dom'
 import ItemList from "../ItemList/ItemList"
-import {ImSpinner6} from "react-icons/im"
 import { getFirestore } from '../../firebase/config'
+
+//Boostrap-react módulos
+import {ImSpinner6} from "react-icons/im"
+
 //Estilos
 import "./ItemListContainer.css"
 
@@ -13,7 +15,7 @@ const ItemListContainer = () => {
   const [items, setItems] = useState ([])
 
   const [loading, setLoading] = useState(false)
-//Con este Hook "useParams" podemos hacer que categoryId sea un dato dinamico para luego utilizarlo en el filtro
+  
   const {categoryId} = useParams()
 
   

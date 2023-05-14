@@ -1,20 +1,14 @@
 import React from 'react';
 
-//Estilos
-import "./ItemCount.css"
-
-//Modulos
+//Boostrap-react módulos
 import {RxPlus} from "react-icons/rx";
 import {RiSubtractFill} from "react-icons/ri";
 
-
+//Estilos
+import "./ItemCount.css"
 
 export const ItemCount = ({max, amount, modify}) => {
 
-    /* const [counter, setCounter] = useState(1); */
-    //El trabajo del hook UseState lo hemos reemplazado con las props max, amount y modify
-    //max hace referencia al stock, amount reemplaza a counter y modify a setCounter
-    //estas props son las que usamos en itemDetail
     const sumar = () =>{
         if (amount < max){
             modify( amount +1)
@@ -35,9 +29,6 @@ export const ItemCount = ({max, amount, modify}) => {
                 <h4>{amount}</h4>
                 <button onClick = {sumar}><h3><RxPlus /></h3></button>
             </div>
-           {/*  <div className='itemcount-btn-right'>
-                <button onClick ={addOn}>Agregar al carrito</button>
-            </div> */}
         </div>
         </>
     )

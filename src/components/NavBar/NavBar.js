@@ -1,5 +1,8 @@
 //Modulos
 import React from "react";
+import CartWidget from "../CartWidget/CartWidget";
+import Logo from "../Logo/Logo";
+import { Link } from "react-router-dom";
 
 //Módulos de react-bootstrap
 import Container from 'react-bootstrap/Container';
@@ -7,14 +10,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-//Componentes
-import CartWidget from "../CartWidget/CartWidget";
-import Logo from "../Logo/Logo";
-
 //Estilos
 import "./NavBar.css";
-import { Link } from "react-router-dom";
-
 
 const NavBar = () => {
     return (

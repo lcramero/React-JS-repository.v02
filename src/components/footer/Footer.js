@@ -1,6 +1,9 @@
+//Módulos
 import React from 'react';
 import FooterImg from "../FooterImg/footerImg";
+import { Link } from 'react-router-dom';
 
+//Estilos
 import "./Footer.css"
 
     const Footer = () => {
@@ -67,17 +70,17 @@ import "./Footer.css"
                                 <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
                             </svg>
                         </a>
-                        <p>/GeminisDUDE</p>
+                        <p>/Gemini'sDUDE</p>
                     </div>
                 </div>
             </div>
             <div className='footer-links'>
                     <div>
-                        <p>Copyright 2022 | Dontyoudare</p>
+                        <p>Copyright 2023 | Dontyoudare</p>
                     </div>
                     <div className="footer-links-self">
                         <div>
-                            <a href="index.js">Home</a>
+                            <Link to="/home">Home</Link>
                         </div>
                         <div>
                             <a href="https://fotografias.lasexta.com/clipping/cmsimages02/2017/11/12/722DD0B7-3582-4FE6-BC2B-0CE99BF7F26F/58.jpg">Contact</a>
